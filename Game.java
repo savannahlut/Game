@@ -18,7 +18,6 @@ public class Game
     public void play()
     { /* implementation not shown */ }
 
-    /** Returns the score earned in the most recently played game, as described in part (a) */
     public int getScore()
     {
         int score = 1; 
@@ -34,6 +33,15 @@ public class Game
     * Precondition: num > 0
     */
     public int playManyTimes(int num)
-    { /* to be implemented in part (b) */ }
+    { 
+        play();
+        int best = getScore();
+        for(int i = 2; i <= num; i++){
+            play();
+            int newScore = getScore();
+            if(newScore > best) best = newScore;
+        }
+        return best;
+    }
 
 }
