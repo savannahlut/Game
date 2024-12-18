@@ -20,7 +20,7 @@ public class Game
 
     public int getScore()
     {
-        int score = 1; 
+        int score = 0; 
         if(levelOne.goalReached()) score += levelOne.getPoints();
         if(levelTwo.goalReached()) score += levelTwo.getPoints();
         if(levelThree.goalReached()) score += levelThree.getPoints();
