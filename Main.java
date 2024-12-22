@@ -18,6 +18,8 @@ public class Main
         daisy.play(false, true, true, false);
         System.out.println(daisy.getScore());
 
-        
+        Game Rosalina = new Game();
+
+        System.out.println(Rosalina.playManyTimes(4));
     }
 }
