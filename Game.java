@@ -59,9 +59,8 @@ public class Game
     */
     public int playManyTimes(int num)
     { 
-        play();
-        int best = getScore();
-        for(int i = 2; i <= num; i++){
+        int best = 0;
+        for(int i = 0; i < num; i++){
             play();
             int newScore = getScore();
             if(newScore > best) best = newScore;

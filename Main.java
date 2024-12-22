@@ -17,5 +17,7 @@ public class Main
         Game daisy = new Game();
         daisy.play(false, true, true, false);
         System.out.println(daisy.getScore());
+
+        
     }
 }
