@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Game
 {
     private Level levelOne;
@@ -23,6 +25,16 @@ public class Game
     /** Simulates the play of this Game (consisting of three levels) and updates all relevant
     * game data
     */
+    public void play()
+    {
+        System.out.println("Enter the number of points:");
+        Scanner s = new Scanner(System.in);
+        levelOne.setGoal(true);
+        levelOne.setPoints(s.nextInt());
+        levelTwo.setPoints(0);
+        levelThree.setPoints(0);
+    }
+
     public void play(boolean one, boolean two, boolean three, boolean bonus)
     {
         levelOne.setPoints(200);
